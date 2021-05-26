@@ -5,8 +5,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = { displayBio: false }
+
+    // console.log('component this', this);
+    
+    this.toggleDisplayBio = this.toggleDisplayBio.bind(this)
   }
 
+  toggleDisplayBio() {
+    this.setState({ displayBio: !this.state.displayBio })
+  }
 
   render() {
     return (
@@ -19,8 +26,13 @@ class App extends Component {
           <div>
           <p>I live in Auckland and have recently pivoted into tech after a prior career as an Underwriter in the Life and disability Insurance world.</p>
           <p>When I am not working I spend time with my family and have been developing a healthy obsession with surfing.</p>
+          <button onClick={this.toggleDisplayBio}>Show Less</button>
           </div>
-          ) : null
+          ) : (
+            <div>
+              <button onClick={this.toggleDisplayBio}>Read More</button>
+            </div>
+          )
       }
       </div>
     )
