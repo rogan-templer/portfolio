@@ -2,7 +2,7 @@ import emailIcon from '../assets/email_icon.png'
 import githubIcon from '../assets/github_icon.png'
 import linkedinIcon from '../assets/linkedin_icon.png'
 
-const SOCIAL = [
+const SOCIALS = [
   {
     id: 1,
     link: 'rmtempler@gmail.com',
@@ -20,4 +20,4 @@ const SOCIAL = [
   }
 ]
 
-export default SOCIAL
+export default SOCIALS

@@ -3,7 +3,7 @@ import PROJECTS from './data/projects'
 
 class Project extends Component {
   render() {
-    console.log('THIS.PROPS', this.props);
+    // console.log('THIS.PROPS', this.props);
 
     const { title, image, description, link } = this.props.project
     
@@ -18,7 +18,7 @@ class Project extends Component {
   }
 }
 
-class Projects extends Component {  
+class Projects extends Component { 
   render() {
     return (
       <div>
