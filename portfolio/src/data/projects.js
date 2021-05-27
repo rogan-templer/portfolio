@@ -11,7 +11,11 @@ const PROJECTS = [
     image: project1
   },
   {
-
+    id: 2,
+    title: 'A simple 10 question Quiz using React.js',
+    description: 'This is a 10 question quiz created using React.js and was part of a group project.',
+    link: 'https://github.com/rogan-templer/ie-team',
+    image: project2
   }
 ];
 
