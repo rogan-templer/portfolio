@@ -19,4 +19,4 @@ const PROJECTS = [
   }
 ];
 
-exports default PROJECTS;
+export default PROJECTS

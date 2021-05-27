@@ -10,7 +10,7 @@ class Projects extends Component {
         {
           PROJECTS.map(PROJECT => {
             return(
-              <div>{PROJECT.title}</div>
+              <div key={PROJECT.id}>{PROJECT.title}</div>
             )
           })
         }
@@ -18,4 +18,6 @@ class Projects extends Component {
       </div>
     )
   }
-}
+};
+
+export default Projects
