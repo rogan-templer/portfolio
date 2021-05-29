@@ -1,34 +1,40 @@
 import React, { Component } from 'react';
-import SOCIALS from './data/socialProfiles'
+import SOCIAL_PROFILES from './data/socialProfiles'
 
-class Social extends Component {
+class SocialProfile extends Component {
   render() {
-
-    const { link, image } = this.props.social
-
+    const { link, image } = this.props.socialProfile;
     return(
-      <div style={{ display: "inline-block", width: 200, margin: 20 }}>
-        <img src={image} alt='social links' style={{ width: 200, height: 120}}/>
-        <a href={link}>{link}</a>
+      <div>
+        <a href={link}>
+          <img src={image} alt='social icons'/>
+        </a>
       </div>
+      
     )
   }
 }
 
-class Socials extends Component {
+class SocialProfiles extends Component {
   render() {
     return(
       <div>
+      <h2>Connect with me</h2>
+      <div>
       {
-        SOCIALS.map(SOCIAL => {
-          return(
-            <Social key={SOCIAL.id} social={SOCIAL}/>
-          )
+        SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
+            return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE }/>
         })
       }
+      </div>
       </div>
     )
   }
 }
 
-export default Socials
+
+
+export default SocialProfiles
+
+// <img src={image} alt='social links' style={{ width: 200, height: 120}}/>
+//         <a href={link}>{link}</a>
