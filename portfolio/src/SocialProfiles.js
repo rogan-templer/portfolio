@@ -5,11 +5,11 @@ class SocialProfile extends Component {
   render() {
     const { link, image } = this.props.socialProfile;
     return(
-      <div>
+      <span className='flex flex-auto'>
         <a href={link}>
-          <img src={image} alt='social icons'/>
+          <img src={image} alt='social icons' style={{ width: 35, height: 35, margin: 5 }} />
         </a>
-      </div>
+      </span>
       
     )
   }
@@ -18,12 +18,12 @@ class SocialProfile extends Component {
 class SocialProfiles extends Component {
   render() {
     return(
-      <div>
+      <div className='text-center'>
       <h2>Connect with me</h2>
       <div>
       {
         SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
-            return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE }/>
+            return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE } />
         })
       }
       </div>

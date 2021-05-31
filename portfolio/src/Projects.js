@@ -8,11 +8,11 @@ class Project extends Component {
     const { title, image, description, link } = this.props.project
     
     return(
-      <div >
-        <h3>{title}</h3>
+      <div className='grid grid-cols-2 gap-2 picture'>
+        <h3 className='text-center'>{title}</h3>
+          <p className='text-center'>{description}</p>
           <img src={image} alt='profile' style={{ width: 500, height: 280 }}/>
-          <p>{description}</p>
-          <a href={link}>{link}</a>
+          <a href={link} className='text-center'>{link}</a>
       </div>
     )
   }
@@ -21,7 +21,7 @@ class Project extends Component {
 class Projects extends Component { 
   render() {
     return (
-      <div>
+      <div className='text-center'>
       <h2>Projects</h2>
       <div>
         {
