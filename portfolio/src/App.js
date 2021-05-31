@@ -12,7 +12,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className='container'>
+      <div className='container bg-gradient-to-b from-gray-500'>
           <div className='text-center'> 
             <h1>Hello!</h1>
             <p>My name is Rogan. I am a Fullstack Software and Web Developer</p>
@@ -20,7 +20,7 @@ class App extends Component {
           </div>
         {
           this.state.displayBio ? (
-            <div>
+            <div className='text-center'>
               <p>I live in Auckland and have recently pivoted into tech after a prior career as an Underwriter in the Life and disability Insurance world.</p>
               <p>When I am not working I spend time with my family and have been developing a healthy obsession with surfing.</p>
               <button onClick={this.toggleDisplayBio}>Show Less</button>
