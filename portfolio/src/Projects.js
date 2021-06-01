@@ -8,11 +8,16 @@ class Project extends Component {
     const { title, image, description, link } = this.props.project
     
     return(
-      <div className='grid grid-cols-2 gap-2 picture'>
-        <h3 className='text-center'>{title}</h3>
-          <p className='text-center'>{description}</p>
-          <img src={image} alt='profile' style={{ width: 500, height: 280 }}/>
-          <a href={link} className='text-center'>See the project on Github here</a>
+      <div className=''>
+        <div className='col m-8'>
+          <img src={image} alt='profile' />
+        </div>  
+      
+        <div >
+          <h3 className=''>{title}</h3>
+          <p className=''>{description}</p>  
+          <a href={link}>See the project on Github here</a>
+        </div>  
       </div>
     )
   }
@@ -21,13 +26,13 @@ class Project extends Component {
 class Projects extends Component { 
   render() {
     return (
-      <div className='text-center'>
-      <h2>Projects</h2>
+      <div className='grid'>
+      <h2 className='col'>Projects</h2>
       <div>
         {
           PROJECTS.map(PROJECT => {
             return(
-              <Project key={PROJECT.id} project={PROJECT}/>
+              <Project key={PROJECT.id} project={PROJECT} />
             )
           })
         }
@@ -39,3 +44,5 @@ class Projects extends Component {
 };
 
 export default Projects
+
+// style={{ width: 500, height: 280 }}
