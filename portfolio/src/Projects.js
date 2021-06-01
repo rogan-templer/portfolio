@@ -12,7 +12,7 @@ class Project extends Component {
         <h3 className='text-center'>{title}</h3>
           <p className='text-center'>{description}</p>
           <img src={image} alt='profile' style={{ width: 500, height: 280 }}/>
-          <a href={link} className='text-center'>{link}</a>
+          <a href={link} className='text-center'>See the project on Github here</a>
       </div>
     )
   }

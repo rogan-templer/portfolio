@@ -1,12 +1,12 @@
 .container {
-  max-width: 1700px;
+  max-width: auto;
   margin: 0 auto;
 }
 
 body {
   font-family: 'Baloo Chettan 2', cursive;
   font-size: 35px;
-  background-color: #EFEDED;
+  background-color: #F1F1F1;
 }
 
 .picture img {
@@ -33,10 +33,14 @@ button {
   display: flex;
   justify-content: center;
   padding: 10px;
-  background-color: #e52647 ;
+  background-color: #EB434F ;
   cursor: pointer;
   font-size: 1.5rem;
   font-family: 'Baloo Chettan 2', cursive;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(26, 25, 25, 0.1);
+}
+
+button:hover {
+  background-color: #21948C;
 }

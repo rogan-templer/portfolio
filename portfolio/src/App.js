@@ -12,7 +12,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className='container bg-gradient-to-b from-gray-500'>
+      <div className='container bg-gradient-to-b from-f2f1ee'>
           <div className='text-center'> 
             <h1>Hello!</h1>
             <p>My name is Rogan. I am a Fullstack Software and Web Developer</p>
